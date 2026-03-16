@@ -8,6 +8,9 @@ app_license = "mit"
 # Apps
 # ------------------
 
+# on_login = "topperprep.api.auth.check_single_session"
+# on_logout = "topperprep.api.auth.clear_user_session"
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page

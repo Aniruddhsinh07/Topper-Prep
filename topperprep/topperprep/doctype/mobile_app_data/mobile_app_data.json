@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2026-02-15 13:13:57.704321",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "excel_file",
+  "column_break_rzhq",
+  "category",
+  "last_push_date",
+  "data_pushed",
+  "section_break_7iqo",
+  "json_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "excel_file",
+   "fieldtype": "Attach",
+   "label": "Excel File",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rzhq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category"
+  },
+  {
+   "fieldname": "last_push_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Last Push Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "data_pushed",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Pushed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7iqo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "json_data",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "json_data",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-15 19:28:18.070376",
+ "modified_by": "test@gmail.com",
+ "module": "Topperprep",
+ "name": "Mobile App Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-08 11:29:19.865972",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "section_break_qksn",
+  "a",
+  "b",
+  "c",
+  "d",
+  "section_break_vdqn",
+  "right_option",
+  "right_answer",
+  "exam_and_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Question"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "A"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "B"
+  },
+  {
+   "fieldname": "c",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "C"
+  },
+  {
+   "fieldname": "d",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "D"
+  },
+  {
+   "fieldname": "right_option",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Right Option"
+  },
+  {
+   "fieldname": "right_answer",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Right Answer"
+  },
+  {
+   "fieldname": "exam_and_year",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0aaa\u0ab0\u0ac0\u0a95\u0acd\u0ab7\u0abe \u0a85\u0aa8\u0ac7 \u0ab5\u0ab0\u0acd\u0ab7"
+  },
+  {
+   "fieldname": "section_break_qksn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_vdqn",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-08 13:27:53.041633",
+ "modified_by": "test@gmail.com",
+ "module": "Topperprep",
+ "name": "Questions Table",
+ "owner": "test@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

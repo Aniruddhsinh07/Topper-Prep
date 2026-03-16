@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:student_name",
+ "creation": "2026-02-18 22:05:21.285420",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "student_name",
+  "mobile_no",
+  "tab_break_uszo",
+  "student_question_history",
+  "test_question_history_tab",
+  "test_question_history"
+ ],
+ "fields": [
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "user.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile No "
+  },
+  {
+   "fieldname": "tab_break_uszo",
+   "fieldtype": "Tab Break",
+   "label": "Practice Question History"
+  },
+  {
+   "fieldname": "student_question_history",
+   "fieldtype": "Table",
+   "label": "Practice Question History",
+   "options": "Student Question History"
+  },
+  {
+   "fieldname": "test_question_history_tab",
+   "fieldtype": "Tab Break",
+   "label": "Test Question History"
+  },
+  {
+   "fieldname": "test_question_history",
+   "fieldtype": "Table",
+   "label": "Test Question History",
+   "options": "Student Question History"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-08 14:52:36.725359",
+ "modified_by": "test@gmail.com",
+ "module": "Topperprep",
+ "name": "Student",
+ "naming_rule": "By fieldname",
+ "owner": "test@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
