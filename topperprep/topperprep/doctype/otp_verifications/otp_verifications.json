@@ -28,8 +28,9 @@
   },
   {
    "fieldname": "purpose",
-   "fieldtype": "Data",
-   "label": "Purpose"
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "\nSignup\nForgot Password"
   },
   {
    "fieldname": "attempt_count",
@@ -60,7 +61,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-16 23:47:16.395787",
+ "modified": "2026-03-17 22:07:22.348290",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "OTP Verifications",
