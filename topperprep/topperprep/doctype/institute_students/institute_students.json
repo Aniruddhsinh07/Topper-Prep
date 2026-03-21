@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-21 16:35:35.518490",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "institute",
+  "student_mobile",
+  "student_user",
+  "is_verified"
+ ],
+ "fields": [
+  {
+   "fieldname": "institute",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Institute",
+   "options": "Institute",
+   "reqd": 1
+  },
+  {
+   "description": "Mobile number of the student (may not have an account yet)",
+   "fieldname": "student_mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Mobile",
+   "reqd": 1
+  },
+  {
+   "description": "Auto-filled when the student creates their account using the institute reference code",
+   "fieldname": "student_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "Checked when the student has created and verified their account",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Account Verified",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-21 16:35:35.811216",
+ "modified_by": "Administrator",
+ "module": "Topperprep",
+ "name": "Institute Students",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Institute",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "student_mobile,institute",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "student_mobile",
+ "track_changes": 1
+}
