@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "IS-.#####",
  "creation": "2026-03-21 16:35:35.518490",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,7 +10,11 @@
   "institute",
   "student_mobile",
   "student_user",
-  "is_verified"
+  "is_verified",
+  "column_break_kyze",
+  "is_deleted",
+  "created_at",
+  "updated_at"
  ],
  "fields": [
   {
@@ -45,15 +50,36 @@
    "in_list_view": 1,
    "label": "Account Verified",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "Is Deleted"
+  },
+  {
+   "fieldname": "column_break_kyze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-21 16:35:35.811216",
+ "modified": "2026-03-21 22:08:54.737076",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Institute Students",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
