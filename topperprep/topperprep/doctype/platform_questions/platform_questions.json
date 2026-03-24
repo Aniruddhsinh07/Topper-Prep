@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PQ.#####",
+ "creation": "2026-03-24 22:11:25.422220",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "exam",
+  "column_break_igzi",
+  "subject",
+  "section_break_zbeg",
+  "question_text",
+  "section_break_bofp",
+  "option_a",
+  "option_c",
+  "column_break_kslr",
+  "option_b",
+  "option_d",
+  "section_break_vinu",
+  "correct_option",
+  "column_break_paoo",
+  "fact_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "exam",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Exam",
+   "options": "Exams"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Subject",
+   "options": "Subjects"
+  },
+  {
+   "fieldname": "column_break_igzi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zbeg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "question_text",
+   "fieldtype": "Small Text",
+   "label": "Question Text"
+  },
+  {
+   "fieldname": "section_break_bofp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_a",
+   "fieldtype": "Data",
+   "label": "Option A"
+  },
+  {
+   "fieldname": "option_b",
+   "fieldtype": "Data",
+   "label": "Option B"
+  },
+  {
+   "fieldname": "option_c",
+   "fieldtype": "Data",
+   "label": "Option C"
+  },
+  {
+   "fieldname": "column_break_kslr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "option_d",
+   "fieldtype": "Data",
+   "label": "Option D"
+  },
+  {
+   "fieldname": "section_break_vinu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "correct_option",
+   "fieldtype": "Data",
+   "label": "Correct Option"
+  },
+  {
+   "fieldname": "fact_data",
+   "fieldtype": "Data",
+   "label": "Fact Data"
+  },
+  {
+   "fieldname": "column_break_paoo",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-24 22:19:34.807590",
+ "modified_by": "Administrator",
+ "module": "Topperprep",
+ "name": "Platform Questions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
