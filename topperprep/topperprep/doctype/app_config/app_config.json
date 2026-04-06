@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AppCo-.#####",
+ "creation": "2026-04-06 23:00:46.903996",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "is_maintenance",
+  "force_update_version",
+  "optional_update_version",
+  "column_break_votl",
+  "maintenance_end_time",
+  "section_break_wmpm",
+  "maintenance_message"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_maintenance",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Maintenance"
+  },
+  {
+   "fieldname": "section_break_wmpm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "maintenance_message",
+   "fieldtype": "Small Text",
+   "label": "Maintenance Message"
+  },
+  {
+   "fieldname": "maintenance_end_time",
+   "fieldtype": "Datetime",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Maintenance End Time"
+  },
+  {
+   "fieldname": "column_break_votl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "force_update_version",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Force Update Version"
+  },
+  {
+   "fieldname": "optional_update_version",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Optional Update Version"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-06 23:07:13.912137",
+ "modified_by": "Administrator",
+ "module": "Topperprep",
+ "name": "App Config",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

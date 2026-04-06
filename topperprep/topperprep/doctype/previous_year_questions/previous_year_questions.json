@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PYQ-.#####",
+ "creation": "2026-04-06 22:41:02.489795",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "paper_id",
+  "column_break_mtxc",
+  "is_deleted",
+  "section_break_qfbi",
+  "question_text",
+  "section_break_rwvu",
+  "option_a",
+  "option_b",
+  "column_break_kmce",
+  "option_c",
+  "option_d",
+  "section_break_wpcq",
+  "correct_option",
+  "fact_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "paper_id",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Paper ID"
+  },
+  {
+   "fieldname": "section_break_qfbi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "question_text",
+   "fieldtype": "Small Text",
+   "label": "Question Text"
+  },
+  {
+   "fieldname": "section_break_rwvu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "option_a",
+   "fieldtype": "Data",
+   "label": "Option A"
+  },
+  {
+   "fieldname": "option_b",
+   "fieldtype": "Data",
+   "label": "Option B"
+  },
+  {
+   "fieldname": "column_break_kmce",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "option_c",
+   "fieldtype": "Data",
+   "label": "Option C"
+  },
+  {
+   "fieldname": "option_d",
+   "fieldtype": "Data",
+   "label": "Option D"
+  },
+  {
+   "fieldname": "section_break_wpcq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "correct_option",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Correct Option",
+   "options": "A\nB\nC\nD"
+  },
+  {
+   "fieldname": "fact_data",
+   "fieldtype": "Data",
+   "label": "Fact Data"
+  },
+  {
+   "fieldname": "column_break_mtxc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Deleted"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-06 22:48:42.504697",
+ "modified_by": "Administrator",
+ "module": "Topperprep",
+ "name": "Previous Year Questions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

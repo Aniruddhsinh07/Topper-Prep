@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-06 23:12:36.767263",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "announcements",
+  "type",
+  "is_active",
+  "column_break_ryhf",
+  "banner_url",
+  "target_user_id",
+  "competition_id",
+  "section_break_mqoz",
+  "body"
+ ],
+ "fields": [
+  {
+   "fieldname": "announcements",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Announcements"
+  },
+  {
+   "fieldname": "section_break_mqoz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Small Text",
+   "label": "Body"
+  },
+  {
+   "fieldname": "column_break_ryhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "banner_url",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Banner Url"
+  },
+  {
+   "default": "General",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "General\nCompetition Invite"
+  },
+  {
+   "fieldname": "target_user_id",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Target User ID"
+  },
+  {
+   "fieldname": "competition_id",
+   "fieldtype": "Int",
+   "label": "Competition ID"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-06 23:18:27.862795",
+ "modified_by": "Administrator",
+ "module": "Topperprep",
+ "name": "Announcements",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
