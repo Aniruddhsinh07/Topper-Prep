@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"KQIE2wyWKI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">TopperPrep</span>\",\"col\":12}},{\"id\":\"CA8W-hgGl3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"o3Qhvf-3JG\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Users &amp; Authentication&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>\",\"col\":12}},{\"id\":\"YPqWeeXEwl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User\",\"col\":3}},{\"id\":\"KQ_Az-JtQe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Subscription\",\"col\":3}},{\"id\":\"nLyfP30v2t\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Otp Verifications\",\"col\":3}},{\"id\":\"UYQ5ofZc8S\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute\",\"col\":3}},{\"id\":\"bVbXUvx72x\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute Questions\",\"col\":3}},{\"id\":\"r0jlLcCser\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"WIvRwRQB8F\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Geography - Districts &amp; Talukas&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>\",\"col\":12}},{\"id\":\"5gTiTIJKs3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Districts\",\"col\":3}},{\"id\":\"9C-BzeYyS-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Talukas\",\"col\":3}},{\"id\":\"70VZnP2j7u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"cPbBopSmkg\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Exams &amp; Subjects&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>\",\"col\":12}},{\"id\":\"428B7I-p_e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Exams\",\"col\":3}},{\"id\":\"drDofIwqDX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subjects\",\"col\":3}},{\"id\":\"nKU9jJ-zrT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Exam Goals\",\"col\":3}},{\"id\":\"h7o1faEv69\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Exam Goals\",\"col\":3}},{\"id\":\"UGHId7FNQ8\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KTtvdPDDfd\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Questions&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>\",\"col\":12}},{\"id\":\"ydZa8WM8rX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Platform Questions\",\"col\":3}},{\"id\":\"SubXMsBw87\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute Students\",\"col\":3}},{\"id\":\"xlrLvGk9T-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute Exam Papers\",\"col\":3}},{\"id\":\"dFAUQStMC3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Question Reports\",\"col\":3}},{\"id\":\"NtrBiAh9qJ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"iBRwHSxrlb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">&nbsp; Practice Mode</span>\",\"col\":12}},{\"id\":\"6UVAHe2GGN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practice Sessions\",\"col\":3}},{\"id\":\"UAeaVY3o7K\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practice Attempted Questions\",\"col\":3}},{\"id\":\"3br3Z7QSK1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practice Answers\",\"col\":3}},{\"id\":\"DzF3nWsC1u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"z98Och4egY\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Test Mode</span>\",\"col\":12}},{\"id\":\"H7xMJ89ZGN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Test Sessions\",\"col\":3}},{\"id\":\"DajuW3IpVV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Test Session Questions\",\"col\":3}},{\"id\":\"MQjK7FqITt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Test Answers\",\"col\":3}},{\"id\":\"I0aGwZJVwx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"_fiQIZc2Y0\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Competitions</span>\",\"col\":12}},{\"id\":\"8UdphZcZZ8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Competitions\",\"col\":3}},{\"id\":\"tZvwakPdoS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Competition Questions\",\"col\":3}},{\"id\":\"jfgp3Miv2r\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"o30x0hbt0Q\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Other&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>\",\"col\":12}},{\"id\":\"eQIu7RYZti\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Government Exam\",\"col\":3}},{\"id\":\"fbVS9tVSA6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Exam Attempt\",\"col\":3}},{\"id\":\"46NyZa3qHl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subject Master\",\"col\":3}},{\"id\":\"BbflP-UpYh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Topperprep Subscription Plan\",\"col\":3}},{\"id\":\"F6PYr1nMhl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Mobile App Data\",\"col\":3}}]",
+ "content": "[{\"id\":\"KQIE2wyWKI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">TopperPrep</span>\",\"col\":12}},{\"id\":\"CA8W-hgGl3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"o3Qhvf-3JG\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Users &amp; Authentication&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>\",\"col\":12}},{\"id\":\"YPqWeeXEwl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User\",\"col\":3}},{\"id\":\"KQ_Az-JtQe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Subscription\",\"col\":3}},{\"id\":\"nLyfP30v2t\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Otp Verifications\",\"col\":3}},{\"id\":\"UYQ5ofZc8S\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute\",\"col\":3}},{\"id\":\"bVbXUvx72x\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute Questions\",\"col\":3}},{\"id\":\"r0jlLcCser\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"WIvRwRQB8F\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Geography - Districts &amp; Talukas&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>\",\"col\":12}},{\"id\":\"5gTiTIJKs3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Districts\",\"col\":3}},{\"id\":\"9C-BzeYyS-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Talukas\",\"col\":3}},{\"id\":\"70VZnP2j7u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"cPbBopSmkg\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Exams &amp; Subjects&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>\",\"col\":12}},{\"id\":\"428B7I-p_e\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Exams\",\"col\":3}},{\"id\":\"drDofIwqDX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subjects\",\"col\":3}},{\"id\":\"nKU9jJ-zrT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Exam Goals\",\"col\":3}},{\"id\":\"h7o1faEv69\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"User Exam Goals\",\"col\":3}},{\"id\":\"UGHId7FNQ8\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KTtvdPDDfd\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Questions&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>\",\"col\":12}},{\"id\":\"ydZa8WM8rX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Platform Questions\",\"col\":3}},{\"id\":\"SubXMsBw87\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute Students\",\"col\":3}},{\"id\":\"xlrLvGk9T-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Institute Exam Papers\",\"col\":3}},{\"id\":\"dFAUQStMC3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Question Reports\",\"col\":3}},{\"id\":\"NtrBiAh9qJ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"iBRwHSxrlb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">&nbsp; Practice Mode</span>\",\"col\":12}},{\"id\":\"6UVAHe2GGN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practice Sessions\",\"col\":3}},{\"id\":\"UAeaVY3o7K\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practice Attempted Questions\",\"col\":3}},{\"id\":\"3br3Z7QSK1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practice Answers\",\"col\":3}},{\"id\":\"DzF3nWsC1u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"z98Och4egY\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Test Mode</span>\",\"col\":12}},{\"id\":\"H7xMJ89ZGN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Test Sessions\",\"col\":3}},{\"id\":\"DajuW3IpVV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Test Session Questions\",\"col\":3}},{\"id\":\"MQjK7FqITt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Test Answers\",\"col\":3}},{\"id\":\"I0aGwZJVwx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"_fiQIZc2Y0\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Competitions</span>\",\"col\":12}},{\"id\":\"8UdphZcZZ8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Competitions\",\"col\":3}},{\"id\":\"tZvwakPdoS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Competition Questions\",\"col\":3}},{\"id\":\"ReV-MZoMVd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Competition Participants\",\"col\":3}},{\"id\":\"o1ABd8bTL5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Competition Answers\",\"col\":3}},{\"id\":\"jfgp3Miv2r\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XzOSISvJfX\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Institute Batches</span>\",\"col\":12}},{\"id\":\"1swAAWA6_A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Batches\",\"col\":3}},{\"id\":\"3Ke7ylSSWq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Batch Students\",\"col\":3}},{\"id\":\"LTq0uVtuQA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KTfsGcVxgA\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Subscriptions &amp; Payments</span>\",\"col\":12}},{\"id\":\"_UFrkIs_44\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subscription Plans\",\"col\":3}},{\"id\":\"nLKnMe1GZk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subscriptions\",\"col\":3}},{\"id\":\"1CI5pKj8fJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payments\",\"col\":3}},{\"id\":\"11jwDwAHBd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"jNVC_kYroS\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Leaderboard &amp; Performance</span>\",\"col\":12}},{\"id\":\"EpZrmec6Wf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leaderboard\",\"col\":3}},{\"id\":\"4Ha4DsE7Fo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subject Performance\",\"col\":3}},{\"id\":\"EaWmFe3jWV\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>&nbsp; <span class=\\\"h3\\\">Current Affairs &amp; Previous Year Papers</span></b>\",\"col\":12}},{\"id\":\"47eZX0GJ22\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Current Affairs\",\"col\":3}},{\"id\":\"mVEjKbiabc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Previous Year Papers\",\"col\":3}},{\"id\":\"o30x0hbt0Q\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Other&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>\",\"col\":12}},{\"id\":\"eQIu7RYZti\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Government Exam\",\"col\":3}},{\"id\":\"fbVS9tVSA6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Exam Attempt\",\"col\":3}},{\"id\":\"46NyZa3qHl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Subject Master\",\"col\":3}},{\"id\":\"BbflP-UpYh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Topperprep Subscription Plan\",\"col\":3}},{\"id\":\"F6PYr1nMhl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Mobile App Data\",\"col\":3}}]",
  "creation": "2026-02-19 21:59:26.371376",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "TopperPrep",
  "links": [],
- "modified": "2026-03-26 23:01:30.410200",
+ "modified": "2026-04-06 22:30:12.608730",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "TopperPrep",
@@ -25,6 +25,14 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Previous Year Papers",
+   "link_to": "Previous Year Papers",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
@@ -60,6 +68,14 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Payments",
+   "link_to": "Payments",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "User Exam Goals",
    "link_to": "User Exam Goals",
    "stats_filter": "[]",
@@ -84,6 +100,14 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Batches",
+   "link_to": "Batches",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Institute Exam Papers",
    "link_to": "Institute Exam Papers",
    "stats_filter": "[]",
@@ -94,6 +118,14 @@
    "doc_view": "List",
    "label": "Districts",
    "link_to": "Districts",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leaderboard",
+   "link_to": "Leaderboard",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -126,6 +158,14 @@
    "doc_view": "List",
    "label": "Competition Questions",
    "link_to": "Competition Questions",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Subscription Plans",
+   "link_to": "Subscription Plans",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -172,8 +212,32 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Subject Performance",
+   "link_to": "Subject Performance",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Test Sessions",
    "link_to": "Test Sessions",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Competition Participants",
+   "link_to": "Competition Participants",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Subscriptions",
+   "link_to": "Subscriptions",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -196,6 +260,14 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Current Affairs",
+   "link_to": "Current Affairs",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Test Answers",
    "link_to": "Test Answers",
    "stats_filter": "[]",
@@ -204,8 +276,24 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Competition Answers",
+   "link_to": "Competition Answers",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Question Reports",
    "link_to": "Question Reports",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Batch Students",
+   "link_to": "Batch Students",
    "stats_filter": "[]",
    "type": "DocType"
   },
