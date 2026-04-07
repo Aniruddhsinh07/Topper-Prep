@@ -6,24 +6,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "exam",
+  "published_date",
   "column_break_zudu",
   "is_deleted",
   "section_break_fuqh",
   "question",
-  "answer",
   "explanation"
  ],
  "fields": [
-  {
-   "fieldname": "exam",
-   "fieldtype": "Link",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Exam",
-   "options": "Exams"
-  },
   {
    "default": "0",
    "fieldname": "is_deleted",
@@ -41,23 +31,26 @@
   {
    "fieldname": "question",
    "fieldtype": "Small Text",
-   "label": "Question"
-  },
-  {
-   "fieldname": "answer",
-   "fieldtype": "Small Text",
-   "label": "Answer"
+   "label": "Content"
   },
   {
    "fieldname": "explanation",
    "fieldtype": "Small Text",
    "label": "Explanation"
+  },
+  {
+   "fieldname": "published_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Published Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-06 22:20:22.801161",
+ "modified": "2026-04-07 22:21:44.832999",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Current Affairs",
