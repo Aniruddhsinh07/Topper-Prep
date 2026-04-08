@@ -18,7 +18,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "batch",
-   "options": "Batches"
+   "options": "Batches",
+   "reqd": 1
   },
   {
    "fieldname": "user",
@@ -27,7 +28,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_skve",
@@ -37,7 +39,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-27 22:27:08.233431",
+ "modified": "2026-04-08 22:26:56.392853",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Batch Students",

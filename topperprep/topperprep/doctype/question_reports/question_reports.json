@@ -22,7 +22,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Reported By",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "question_type",
@@ -40,7 +41,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Question Id",
-   "options": "question_type"
+   "options": "question_type",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_aext",
@@ -68,7 +70,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-25 21:56:34.266807",
+ "modified": "2026-04-08 22:16:48.897961",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Question Reports",

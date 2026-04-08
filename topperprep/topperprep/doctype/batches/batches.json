@@ -19,7 +19,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Institute",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "name1",
@@ -47,7 +48,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-27 22:21:01.058378",
+ "modified": "2026-04-08 22:26:19.091692",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Batches",

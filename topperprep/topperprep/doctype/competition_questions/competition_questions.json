@@ -17,7 +17,8 @@
    "fieldname": "competition",
    "fieldtype": "Link",
    "label": "Competition",
-   "options": "Competitions"
+   "options": "Competitions",
+   "reqd": 1
   },
   {
    "fieldname": "question_type",
@@ -50,7 +51,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-26 22:59:49.095106",
+ "modified": "2026-04-08 22:23:44.505363",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Competition Questions",

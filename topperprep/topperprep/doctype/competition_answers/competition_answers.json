@@ -23,7 +23,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Competition",
-   "options": "Competitions"
+   "options": "Competitions",
+   "reqd": 1
   },
   {
    "fieldname": "participant",
@@ -83,7 +84,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-27 22:08:00.168836",
+ "modified": "2026-04-08 22:25:07.571392",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Competition Answers",

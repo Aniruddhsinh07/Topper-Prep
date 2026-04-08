@@ -21,13 +21,15 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "subject_id",
    "fieldtype": "Link",
    "label": "Subject ID",
-   "options": "Subjects"
+   "options": "Subjects",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_scqa",
@@ -59,7 +61,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-06 22:09:31.064524",
+ "modified": "2026-04-08 22:32:28.987235",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Subject Performance",

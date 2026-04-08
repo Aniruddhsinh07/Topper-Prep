@@ -21,7 +21,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Student",
-   "options": "Student"
+   "options": "Student",
+   "reqd": 1
   },
   {
    "fieldname": "subscription_plan",
@@ -29,7 +30,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Subscription Plan",
-   "options": "TopperPrep Subscription Plan"
+   "options": "TopperPrep Subscription Plan",
+   "reqd": 1
   },
   {
    "fieldname": "payment_reference",
@@ -68,8 +70,8 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-19 22:16:12.655081",
- "modified_by": "test@gmail.com",
+ "modified": "2026-04-08 22:07:25.443718",
+ "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Student Subscription",
  "naming_rule": "Expression",

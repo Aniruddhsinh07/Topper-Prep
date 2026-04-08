@@ -28,7 +28,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "exam",
@@ -37,7 +38,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Exam",
-   "options": "Exams"
+   "options": "Exams",
+   "reqd": 1
   },
   {
    "fieldname": "score",
@@ -119,7 +121,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-26 21:41:45.617855",
+ "modified": "2026-04-08 22:18:17.532527",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Practice Sessions",

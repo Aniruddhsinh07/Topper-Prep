@@ -44,13 +44,14 @@
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Published Date"
+   "label": "Published Date",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-07 22:21:44.832999",
+ "modified": "2026-04-08 22:33:43.959820",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Current Affairs",

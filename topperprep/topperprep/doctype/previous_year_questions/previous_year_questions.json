@@ -28,7 +28,8 @@
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Paper ID"
+   "label": "Paper ID",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_qfbi",
@@ -102,7 +103,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-06 22:48:42.504697",
+ "modified": "2026-04-08 22:34:55.216171",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Previous Year Questions",
