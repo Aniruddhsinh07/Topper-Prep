@@ -10,10 +10,17 @@
   "institute_name",
   "phone",
   "email",
+  "institute_type",
+  "city",
+  "exam_categories_you_teach",
   "column_break_qtjp",
   "user",
   "reference_code",
-  "is_active"
+  "is_active",
+  "contact_person",
+  "no_of_students",
+  "section_break_dsuw",
+  "anything_else_youd_like_us_to_know"
  ],
  "fields": [
   {
@@ -43,7 +50,6 @@
    "fieldtype": "Link",
    "label": "Frappe User",
    "options": "User",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -53,7 +59,6 @@
    "in_list_view": 1,
    "label": "Reference Code",
    "read_only": 1,
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -65,12 +70,47 @@
   {
    "fieldname": "column_break_qtjp",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "institute_type",
+   "fieldtype": "Select",
+   "label": "Institute Type",
+   "options": "Coaching centre\nSchool / college\nOnline tutoring\nIndividual tutor\nOther"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact person"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "no_of_students",
+   "fieldtype": "Data",
+   "label": "No. of students"
+  },
+  {
+   "fieldname": "exam_categories_you_teach",
+   "fieldtype": "Data",
+   "label": "Exam categories you teach"
+  },
+  {
+   "fieldname": "section_break_dsuw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "anything_else_youd_like_us_to_know",
+   "fieldtype": "Small Text",
+   "label": "Anything else you'd like us to know?"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-21 22:04:16.295628",
+ "modified": "2026-04-26 12:59:53.143734",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Institute",

@@ -643,13 +643,11 @@ def login_user(username, password, device_id):
         extra["reference_code"] = institute["reference_code"]
         extra["institute_name"] = institute["institute_name"]
 
-    return {
-        "status": "success",
-        "message": "Login successful",
-        "sid": frappe.session.sid,
-        "user_type": user_type,
-        **extra
-    }
+    return build_auth_response(
+                user_doc=user_doc,
+                user_type=user_type,
+                extra=extra
+            )
 
 
 # ---------------------------------------------------------------------------
@@ -667,3 +665,68 @@ def logout_user():
     frappe.local.login_manager.logout()
 
     return {"status": "success", "message": "Logged out successfully"}
+
+
+    # ==========================================================
+# GLOBAL TOKEN AUTH (Single API Key + Secret for ALL Users)
+# Similar to Supabase JWT approach
+# ==========================================================
+
+def get_global_api_token():
+    """
+    Returns one global API token for all users.
+    Store these values in site_config.json:
+
+    {
+        "global_api_key": "topperprep_app",
+        "global_api_secret": "your_super_secret_token"
+    }
+
+    All users will use the SAME API credentials.
+    """
+    api_key = frappe.conf.get("global_api_key")
+    api_secret = frappe.conf.get("global_api_secret")
+
+    if not api_key or not api_secret:
+        frappe.throw(
+            "Global API credentials not configured in site_config.json"
+        )
+
+    return {
+        "api_key": api_key,
+        "api_secret": api_secret,
+        "access_token": f"{api_key}:{api_secret}",
+        "token_type": "Bearer"
+    }
+
+
+def build_auth_response(user_doc, user_type="Student", extra=None):
+    """
+    Creates a Supabase-like auth response.
+    Uses one global token for all users and returns user details.
+    """
+    if extra is None:
+        extra = {}
+
+    token_data = get_global_api_token()
+
+    return {
+        "status": "success",
+        "user": {
+            "id": user_doc.name,
+            "email": user_doc.email,
+            "full_name": (
+                f"{user_doc.first_name or ''} "
+                f"{user_doc.last_name or ''}"
+            ).strip(),
+            "mobile_no": user_doc.mobile_no,
+            "user_type": user_type,
+            **extra
+        },
+        "session": {
+            "access_token": token_data["access_token"],
+            "api_key": token_data["api_key"],
+            "api_secret": token_data["api_secret"],
+            "token_type": "Bearer"
+        }
+    }
