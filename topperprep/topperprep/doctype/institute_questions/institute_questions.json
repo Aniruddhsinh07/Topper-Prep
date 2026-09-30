@@ -11,16 +11,24 @@
   "exam_paper",
   "section_break_bzjl",
   "question_text",
+  "platform_question_image",
   "section_break_atuf",
   "option_a",
-  "option_c",
-  "column_break_beze",
+  "image_option_a",
+  "column_break_gvyu",
   "option_b",
+  "image_option_b",
+  "column_break_beze",
+  "option_c",
+  "image_option_c",
+  "column_break_bjco",
   "option_d",
+  "image_option_d",
   "section_break_qdqs",
   "correct_option",
   "column_break_lhnp",
-  "fact_data"
+  "fact_data",
+  "reference"
  ],
  "fields": [
   {
@@ -100,12 +108,51 @@
   {
    "fieldname": "column_break_lhnp",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "platform_question_image",
+   "fieldtype": "Table",
+   "label": "Platform Question Image",
+   "options": "Platform Question Image"
+  },
+  {
+   "fieldname": "image_option_a",
+   "fieldtype": "Attach Image",
+   "label": "Image Option A"
+  },
+  {
+   "fieldname": "image_option_b",
+   "fieldtype": "Attach Image",
+   "label": "Image Option B"
+  },
+  {
+   "fieldname": "image_option_c",
+   "fieldtype": "Attach Image",
+   "label": "Image Option C"
+  },
+  {
+   "fieldname": "image_option_d",
+   "fieldtype": "Attach Image",
+   "label": "Image Option D"
+  },
+  {
+   "fieldname": "column_break_gvyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bjco",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-08 22:08:33.559756",
+ "modified": "2026-08-08 22:46:23.837545",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Institute Questions",

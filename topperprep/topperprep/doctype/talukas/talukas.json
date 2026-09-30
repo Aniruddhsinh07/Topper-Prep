@@ -6,7 +6,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "name1",
+  "districts"
  ],
  "fields": [
   {
@@ -18,12 +19,20 @@
    "label": "Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "districts",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Districts",
+   "options": "Districts"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-08 22:09:40.152908",
+ "modified": "2026-06-11 22:11:45.508686",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Talukas",

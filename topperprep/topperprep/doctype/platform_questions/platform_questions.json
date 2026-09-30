@@ -1,26 +1,37 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "PQ.#####",
+ "autoname": "PQ.#######",
  "creation": "2026-03-24 22:11:25.422220",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "exam",
+  "year",
   "column_break_igzi",
   "subject",
   "section_break_zbeg",
   "question_text",
+  "platform_question_image",
   "section_break_bofp",
   "option_a",
-  "option_c",
-  "column_break_kslr",
+  "image_option_a",
+  "column_break_dvww",
   "option_b",
+  "image_option_b",
+  "column_break_kslr",
+  "option_c",
+  "image_option_c",
+  "column_break_sjjk",
   "option_d",
+  "image_option_d",
   "section_break_vinu",
   "correct_option",
   "column_break_paoo",
-  "fact_data"
+  "fact_data",
+  "fact_data_attach",
+  "reference"
  ],
  "fields": [
   {
@@ -30,8 +41,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Exam",
-   "options": "Exams",
-   "reqd": 1
+   "options": "Exams"
   },
   {
    "fieldname": "subject",
@@ -40,8 +50,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Subject",
-   "options": "Subjects",
-   "reqd": 1
+   "options": "Subjects"
   },
   {
    "fieldname": "column_break_igzi",
@@ -53,7 +62,7 @@
   },
   {
    "fieldname": "question_text",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text",
    "label": "Question Text"
   },
   {
@@ -101,12 +110,61 @@
   {
    "fieldname": "column_break_paoo",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "platform_question_image",
+   "fieldtype": "Table",
+   "label": "Platform Question Image",
+   "options": "Platform Question Image"
+  },
+  {
+   "fieldname": "image_option_a",
+   "fieldtype": "Attach Image",
+   "label": "Image Option A"
+  },
+  {
+   "fieldname": "image_option_b",
+   "fieldtype": "Attach Image",
+   "label": "Image Option B"
+  },
+  {
+   "fieldname": "column_break_dvww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_option_c",
+   "fieldtype": "Attach Image",
+   "label": "Image Option C"
+  },
+  {
+   "fieldname": "column_break_sjjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_option_d",
+   "fieldtype": "Attach Image",
+   "label": "Image Option D"
+  },
+  {
+   "fieldname": "fact_data_attach",
+   "fieldtype": "Attach",
+   "label": "Fact Fata Attach"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-08 22:15:00.421732",
+ "modified": "2026-09-24 22:25:41.587061",
  "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Platform Questions",

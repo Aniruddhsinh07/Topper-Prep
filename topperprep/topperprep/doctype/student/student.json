@@ -9,6 +9,12 @@
   "user",
   "student_name",
   "mobile_no",
+  "payment_reference",
+  "column_break_eixu",
+  "subscription_plan",
+  "is_free_plan",
+  "start_plan",
+  "end_plan",
   "tab_break_uszo",
   "student_question_history",
   "test_question_history_tab",
@@ -62,13 +68,45 @@
    "fieldtype": "Table",
    "label": "Test Question History",
    "options": "Student Question History"
+  },
+  {
+   "fieldname": "subscription_plan",
+   "fieldtype": "Link",
+   "label": "Subscription Plan",
+   "options": "TopperPrep Subscription Plan"
+  },
+  {
+   "fieldname": "start_plan",
+   "fieldtype": "Datetime",
+   "label": "Start Plan"
+  },
+  {
+   "fieldname": "end_plan",
+   "fieldtype": "Datetime",
+   "label": "End Plan"
+  },
+  {
+   "fieldname": "column_break_eixu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_reference",
+   "fieldtype": "Data",
+   "label": "Payment Reference "
+  },
+  {
+   "default": "0",
+   "fetch_from": "subscription_plan.is_free_plan",
+   "fieldname": "is_free_plan",
+   "fieldtype": "Check",
+   "label": "Is Free Plan"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-08 14:52:36.725359",
- "modified_by": "test@gmail.com",
+ "modified": "2026-06-27 15:37:56.128284",
+ "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Student",
  "naming_rule": "By fieldname",

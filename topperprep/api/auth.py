@@ -10,8 +10,101 @@ OTP_EXPIRY_MINUTES = 2
 OTP_EXPIRY_SECONDS = OTP_EXPIRY_MINUTES * 60
 MAX_OTP_ATTEMPTS = 5
 
+import requests
+import frappe
 
-# ---------------------------------------------------------------------------
+
+def send_whatsapp_otp(mobile, otp):
+    """Send OTP using Meta Authentication Template (URL button type)"""
+
+    settings = frappe.get_single("WhatsApp Settings")
+    account = frappe.get_doc(
+        "WhatsApp Account",
+        settings.default_whatsapp_account
+    )
+
+    try:
+        access_token = account.get_password("access_token")
+    except Exception:
+        access_token = account.access_token
+
+    # Format mobile number
+    mobile = str(mobile).strip().replace("+", "")
+
+    if mobile.startswith("0"):
+        mobile = mobile[1:]
+
+    if not mobile.startswith("91"):
+        mobile = "91" + mobile
+
+    url = (
+        f"https://{settings.api_base_url}/"
+        f"{settings.api_version}/"
+        f"{account.phone_number_id}/messages"
+    )
+
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+        "Content-Type": "application/json",
+    }
+
+    payload = {
+        "messaging_product": "whatsapp",
+        "to": mobile,
+        "type": "template",
+        "template": {
+            "name": "topperprep_oyp",
+            "language": {
+                "code": "en"
+            },
+            "components": [
+                {
+                    "type": "body",
+                    "parameters": [
+                        {
+                            "type": "text",
+                            "text": str(otp)
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "sub_type": "url",
+                    "index": "0",
+                    "parameters": [
+                        {
+                            "type": "text",
+                            "text": str(otp)
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+
+    try:
+        response = requests.post(
+            url=url,
+            headers=headers,
+            json=payload,
+            timeout=30
+        )
+
+        frappe.logger().info("WhatsApp Payload: %s", frappe.as_json(payload))
+        frappe.logger().info("WhatsApp Response: %s", response.text)
+        # frappe.throw(str(response.status_code))
+        # if response.status_code != 200:
+        #     frappe.throw(response.text)
+        # if response.status_code not in (200, 201):
+        #     frappe.throw(response.text)
+        # return response.json()
+        
+    except requests.exceptions.RequestException:
+        frappe.log_error(
+            title="WhatsApp OTP Error",
+            message=frappe.get_traceback()
+        )
+        raise
 # Helpers
 # ---------------------------------------------------------------------------
 
@@ -42,7 +135,8 @@ def _create_otp_record(mobile, purpose):
     })
     doc.insert(ignore_permissions=True)
     frappe.db.commit()
-
+    send_whatsapp_otp(mobile, str(otp_code))
+    
     return otp_code
 
 
@@ -85,23 +179,6 @@ def _generate_reference_code(length=8):
 # WhatsApp OTP Sender (Interakt)
 # ---------------------------------------------------------------------------
 
-def send_whatsapp_otp(phone, otp):
-    url = "https://api.interakt.ai/v1/public/message/"
-    headers = {
-        "Authorization": "Basic YOUR_INTERAKT_API_KEY",
-        "Content-Type": "application/json"
-    }
-    payload = {
-        "countryCode": "+91",
-        "phoneNumber": phone,
-        "type": "Template",
-        "template": {
-            "name": "otp_template",
-            "languageCode": "en",
-            "bodyValues": [str(otp)]
-        }
-    }
-    requests.post(url, json=payload, headers=headers)
 
 
 # ===========================================================================
@@ -437,7 +514,6 @@ def register_user(full_name, phone, password, email=None, reference_code=None):
 
     # --- Create OTP record & send ---
     otp = _create_otp_record(mobile=phone, purpose="Signup")
-    # send_whatsapp_otp(phone, otp)  # Uncomment when ready
 
     return {
         "status": "success",
@@ -512,6 +588,14 @@ def verify_otp(phone, otp, purpose="Signup"):
         })
         user.insert(ignore_permissions=True)
         update_password(user.name, pending["password"])
+
+        student = frappe.get_doc({
+            "doctype": "Student",
+            "user": user.name,
+            "student_name": pending["full_name"],
+            "mobile_no": phone,
+        })
+        student.insert(ignore_permissions=True)
 
         # --- Institute linking: match student via reference code ---
         institute = pending.get("institute")
@@ -606,29 +690,91 @@ def set_password(phone, password):
 # 5. Login
 # ---------------------------------------------------------------------------
 
+import frappe
+from frappe.auth import LoginManager
+
+
+
 @frappe.whitelist(allow_guest=True)
-def login_user(username, password, device_id):
+def login_user(username, password, device_id=None):
+
+    # =====================================================
+    # GET HEADER
+    # =====================================================
+
+    auth = frappe.get_request_header("X-API-KEY")
+
+    if not auth:
+        frappe.throw("API key required")
+
+    # =====================================================
+    # REMOVE "token "
+    # =====================================================
+
+    if auth.startswith("token "):
+        auth = auth.replace("token ", "")
+
+    # =====================================================
+    # SPLIT KEY + SECRET
+    # =====================================================
+
+    try:
+        api_key, api_secret = auth.split(":")
+    except Exception:
+        frappe.throw("Invalid API key format")
+
+    # =====================================================
+    # VALIDATE
+    # =====================================================
+
+    global_key = frappe.conf.get("global_api_key")
+    global_secret = frappe.conf.get("global_api_secret")
+
+    if api_key != global_key or api_secret != global_secret:
+        frappe.throw("Invalid API credentials")
+
+    # =====================================================
+    # FIND USER
+    # =====================================================
 
     if username.isdigit():
-        user_doc = frappe.get_doc("User", {"mobile_no": username})
+
+        user = frappe.db.get_value(
+            "User",
+            {"mobile_no": username},
+            "name"
+        )
+
+        if not user:
+            frappe.throw("User not found")
+
+        user_doc = frappe.get_doc("User", user)
         username = user_doc.name
+
     else:
+
+        if not frappe.db.exists("User", username):
+            frappe.throw("User not found")
+
         user_doc = frappe.get_doc("User", username)
 
-    if user_doc.is_mobile_logged_in and user_doc.last_device_id != device_id:
-        return {
-            "status": "error",
-            "message": "You are already logged in on another device"
-        }
+    # =====================================================
+    # LOGIN
+    # =====================================================
 
     login_manager = LoginManager()
-    login_manager.authenticate(username, password)
-    login_manager.post_login()
 
-    user_doc.db_set("last_device_id", device_id)
-    user_doc.db_set("is_mobile_logged_in", 1)
+    try:
+        login_manager.authenticate(username, password)
+        login_manager.post_login()
 
-    # --- Identify user type and return extra context ---
+    except Exception:
+        frappe.throw("Invalid username or password")
+
+    # =====================================================
+    # USER TYPE
+    # =====================================================
+
     user_type = "Student"
     extra = {}
 
@@ -638,19 +784,30 @@ def login_user(username, password, device_id):
         ["name", "reference_code", "institute_name"],
         as_dict=True
     )
+
     if institute:
         user_type = "Institute"
-        extra["reference_code"] = institute["reference_code"]
-        extra["institute_name"] = institute["institute_name"]
 
-    return build_auth_response(
-                user_doc=user_doc,
-                user_type=user_type,
-                extra=extra
-            )
+        extra["reference_code"] = institute.get("reference_code")
+        extra["institute_name"] = institute.get("institute_name")
 
+    # =====================================================
+    # RESPONSE
+    # =====================================================
 
-# ---------------------------------------------------------------------------
+    return {
+        "status": "success",
+        "message": "Login successful",
+        "sid": frappe.session.sid,
+        "user": {
+            "email": user_doc.name,
+            "full_name": user_doc.full_name,
+            "mobile_no": user_doc.mobile_no,
+            "user_type": user_type
+        },
+        "extra": extra
+    }
+    # ---------------------------------------------------------------------------
 # 6. Logout
 # ---------------------------------------------------------------------------
 
@@ -660,7 +817,7 @@ def logout_user():
     user = frappe.session.user
     user_doc = frappe.get_doc("User", user)
     user_doc.db_set("is_mobile_logged_in", 0)
-    user_doc.db_set("last_device_id", "")
+    # user_doc.db_set("last_device_id", "")
 
     frappe.local.login_manager.logout()
 

@@ -7,7 +7,6 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
 # on_login = "topperprep.api.auth.check_single_session"
 # on_logout = "topperprep.api.auth.clear_user_session"
 

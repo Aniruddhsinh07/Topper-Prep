@@ -8,6 +8,7 @@
  "field_order": [
   "section_break_iavs",
   "question_id",
+  "institute_questions_id",
   "subject",
   "status",
   "selected_option",
@@ -20,11 +21,12 @@
   },
   {
    "fieldname": "question_id",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Question ID"
+   "label": "Platform Question ID",
+   "options": "Platform Questions"
   },
   {
    "fieldname": "subject",
@@ -33,7 +35,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Subject",
-   "options": "Subject Master"
+   "options": "Subjects"
   },
   {
    "fieldname": "status",
@@ -55,16 +57,26 @@
   {
    "fieldname": "exam",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Exam",
-   "options": "Government Exam"
+   "options": "Exams"
+  },
+  {
+   "fieldname": "institute_questions_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Institute Questions ID",
+   "options": "Institute Questions"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-08 15:17:54.334759",
- "modified_by": "test@gmail.com",
+ "modified": "2026-06-25 22:25:26.073792",
+ "modified_by": "Administrator",
  "module": "Topperprep",
  "name": "Student Question History",
  "owner": "test@gmail.com",
